@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://prosdong20-dot.github.io/click-yes/sitemap.xml

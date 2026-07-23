@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Play click.yes, a challenging free cookie clicker game with levels, combos, critical clicks and powerful upgrades.">
+  <meta name="theme-color" content="#160d2b">
+  <meta property="og:title" content="click.yes — Extreme Cookie Clicker">
+  <meta property="og:description" content="Click fast, build combos and unlock powerful upgrades.">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://prosdong20-dot.github.io/click-yes/">
+  <link rel="canonical" href="https://prosdong20-dot.github.io/click-yes/">
+  <title>click.yes — Extreme Cookie Clicker Game</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="stars" aria-hidden="true"></div>
+  <main class="layout">
+    <section class="game-panel">
+      <header>
+        <p class="eyebrow">THE EXTREME COOKIE CHALLENGE</p>
+        <h1>click<span>.</span>fast</h1>
+        <p class="tagline">Every cookie is earned. Can you conquer the impossible shop?</p>
+      </header>
+
+      <div class="stats" aria-label="Game statistics">
+        <div><strong id="score">0</strong><span>cookies</span></div>
+        <div><strong id="level">1</strong><span>level</span></div>
+        <div><strong id="power">1</strong><span>per click</span></div>
+        <div><strong id="cps">0</strong><span>per second</span></div>
+      </div>
+
+      <section class="arena">
+        <div id="levelMessage" class="level-message" aria-live="polite"></div>
+        <div id="combo" class="combo">COMBO ×1</div>
+        <button id="cookie" class="cookie" aria-label="Click the chocolate cookie">
+          <span class="shine"></span>
+          <i class="chip c1"></i><i class="chip c2"></i><i class="chip c3"></i><i class="chip c4"></i>
+          <i class="chip c5"></i><i class="chip c6"></i><i class="chip c7"></i><i class="chip c8"></i><i class="chip c9"></i>
+        </button>
+        <p id="progressText">1,000 cookies until level 2</p>
+        <div class="progress"><div id="progressBar"></div></div>
+        <p class="hint">Keep clicking quickly to build your combo!</p>
+      </section>
+      <div class="controls"><button id="sound" class="sound">🔊 Sound on</button><button id="reset" class="reset">Reset all progress</button></div>
+    </section>
+
+    <aside class="shop">
+      <div class="shop-title"><div><p>POWER STORE</p><h2>Upgrades</h2></div><span>🛒</span></div>
+      <div id="upgrades" class="upgrades"></div>
+      <p class="save-note">✓ Progress saves automatically</p>
+    </aside>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
